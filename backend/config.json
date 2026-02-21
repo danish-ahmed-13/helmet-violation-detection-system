@@ -1,0 +1,33 @@
+{
+    "app": {
+        "name": "Helmet Violation Detection System",
+        "version": "1.0.0",
+        "host": "0.0.0.0",
+        "port": 5000,
+        "debug": true
+    },
+
+    "database": {
+        "name": "anpr.db"
+    },
+
+    "model": {
+        "vehicle_model_path": "models/yolov8n.pt",
+        "helmet_model_path": "runs/detect/train/weights/helmet.pt",
+        "confidence_threshold": 0.4
+    },
+
+    "media": {
+        "save_folder": "media",
+        "violation_folder": "media/violations"
+    },
+
+    "roi": {
+        "x1": 0,
+        "y1": 0,
+        "x2": 1280,
+        "y2": 720
+    },
+
+    "video_path": "C:/Users/USER/Desktop/helmet_violation_system/backend/test_images"
+}
